@@ -1,0 +1,22 @@
+{
+  "name": "contactus",
+  "version": "1.0.0",
+  "description": "sample app using node mailr",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olawande",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-handlebars": "^6.0.3",
+    "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
