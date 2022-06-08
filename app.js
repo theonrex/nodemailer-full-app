@@ -110,10 +110,12 @@ app.post('/send', (req, res) => {
   });
   });
 
-app.listen(3000, () => console.log('Server started...'));
+// app.listen(3000, () => console.log('Server started...'));
 
 
-
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 //  app.use('/public', express.static(path.join(__dirname, 'public')));
 
