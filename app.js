@@ -10,8 +10,8 @@ const app = express();
 
 // view engine setup
 
-app.engine('handlebars', engine({ extname: '.html', defaultLayout: "contact"}));
- app.set('view engine', 'handlebars');
+app.engine('html', engine({ extname: '.html', defaultLayout: "home"}));
+ app.set('view engine', 'html');
 
  // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -20,13 +20,24 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+
 app.get('/', (req, res) => {
-  res.render('contact');
+  res.render('home');
 });
 
-app.get('/contact', (req, res) => {
-  res.render('contact');
+// app.get('/contact', (req, res) => {
+//   res.render('contact');
+// });
+
+app.get('/contact', function(req, res) {
+    res.sendFile('views/contact.html', {root: __dirname })
 });
+
+
+// app.get('/home', (req, res) => {
+//   res.render('home');
+// });
 // Static Files
 // app.use(express.static('public'))
 // // Example for other folders - not required
