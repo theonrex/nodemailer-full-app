@@ -2,6 +2,9 @@
   "name": "contactus",
   "version": "1.0.0",
   "description": "sample app using node mailr",
+   "engines": {
+    "node": "16.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
