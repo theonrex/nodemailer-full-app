@@ -394,7 +394,7 @@ text-align: center;
     flex-direction: column;
 }
 @media (max-width: 626.98px) {
-        .carousel .carousel-img img {
+        .carousel .carousel-img {
     width: 190% !important;  } 
     
 }
