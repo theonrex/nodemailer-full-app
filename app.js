@@ -3,10 +3,11 @@ const bodyParser = require('body-parser');
 const { engine } = require('express-handlebars');
 const path = require('path')
 const nodemailer = require('nodemailer');
+
 const PORT = process.env.PORT || 5000
 // const expressLayouts = require('express-ejs-layouts')
-
-
+ require("dotenv").config()
+ 
 const app = express();
 
 // view engine setup
@@ -27,37 +28,11 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
-// app.get('/contact', (req, res) => {
-//   res.render('contact');
-// });
 
 app.get('/contact', function(req, res) {
     res.sendFile('views/contact.html', {root: __dirname })
 });
 
-
-// app.get('/home', (req, res) => {
-//   res.render('home');
-// });
-// Static Files
-// app.use(express.static('public'))
-// // Example for other folders - not required
-// // app.use('/css', express.static(__dirname + 'public/css'))
-
-// // Set Templating Engine
-// app.use(expressLayouts)
-// app.set('layout', './layouts/index');
-// app.set('view engine', 'hbs');
-
-
-// // Routes
-// app.get('/', (req, res) => {
-//     res.render('rex')
-// })
-
-// app.get('/contact', (req, res) => {
-//     res.render('contact')
-// })
 
 
 
@@ -82,18 +57,19 @@ app.post('/send', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'xxxxxxxx@gmail.com', // generated ethereal user
-        pass: 'xxxxxxxx'  // generated ethereal password
+        user: process.env.DB_USER, // generated ethereal user
+        pass:  process.env.DB_PASS, // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
     }
   });
 
+   
   // setup email data with unicode symbols
   let mailOptions = {
-      from: 'xxxxxx@gmail.com', // sender address
-      to: 'xxxxxxxx@gmail.com', // list of receivers
+      from:  process.env.DB_FROM, // sender address
+      to:  process.env.DB_TO, // list of receivers
       subject: 'Node Contact Request', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body

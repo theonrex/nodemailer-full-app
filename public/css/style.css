@@ -394,16 +394,36 @@ text-align: center;
     flex-direction: column;
 }
 @media (max-width: 626.98px) {
-        .carousel .carousel-img {
+         .carousel img {
     width: 190% !important;  } 
     
 }
 
 @media (max-width: 328.98px) {
-    .carousel .carousel-img img {
+     .carousel img {
         width: 260% !important;
     }
 
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    opacity: 0 !important;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
 }
 
 .carousel .carousel-img {
@@ -415,7 +435,7 @@ text-align: center;
     overflow: hidden;
 }
 
-.carousel .carousel-img::after {
+.carousel-item::after {
     position: absolute;
     content: "";
     top: 0;
@@ -1300,7 +1320,7 @@ text-align: left !important;
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 section {
-    padding: 60px 0;
+    padding: 75px 0 0px 0;
 }
 
 section .section-title {
@@ -1311,6 +1331,7 @@ section .section-title {
 }
 
 #footer {
+    
     background: #000000 !important;
 }
 
@@ -1358,7 +1379,7 @@ section .section-title {
 
  #link-text{
     text-align: left !important;
-    padding-left: 22px;
+    padding-left: 18px;
 }
 
 #footer ul.social li a,

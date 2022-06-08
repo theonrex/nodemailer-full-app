@@ -2,7 +2,7 @@
   "name": "contactus",
   "version": "1.0.0",
   "description": "sample app using node mailr",
-   "engines": {
+  "engines": {
     "node": "16.x"
   },
   "main": "app.js",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1",
