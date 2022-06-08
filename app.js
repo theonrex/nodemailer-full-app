@@ -91,76 +91,7 @@ app.post('/send', (req, res) => {
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
-// app.listen(process.env.PORT || 3000, function(){
-//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-// });
-
-//  app.use('/public', express.static(path.join(__dirname, 'public')));
-
-// // //body parser
-// app.use(bodyParser.urlencoded({ extended: false }));
-
-//  app.use(bodyParser.json());
-
-// //statcic folder
-// app.get('/', (req, res) =>{
-//     res.render('contact')
-// });
-
-// app.listen(3000, () => console.log('server'));
 
 
 
 
-// // require("dotenv").config();
-// // const express = require("express");
-// // const app = express();
-// // const cors = require("cors");
-// // const connection = require("./db");
-// // const userRoutes = require("./routes/users");
-// // const authRoutes = require("./routes/auth");
-
-// // // database connection
-// // connection();
-
-// // // middlewares
-// // app.use(express.json());
-// // app.use(cors());
-
-// // // routes
-// // app.use("/api/users", userRoutes);
-// // app.use("/api/auth", authRoutes);
-
-// // const port = process.env.PORT || 8080;
-// // app.listen(port, console.log(`Listening on port ${port}...`));
-
-
-
-// Imports
-// const express = require('express')
-// const expressLayouts = require('express-ejs-layouts')
-
-// const app = express()
-// const port = 3000
-
-// // Static Files
-// app.use(express.static('public'))
-// // Example for other folders - not required
-// // app.use('/css', express.static(__dirname + 'public/css'))
-
-// // Set Templating Engine
-// app.use(expressLayouts)
-// app.set('layout', './layouts/full-width')
-// app.set('view engine', 'ejs')
-
-// // Routes
-// app.get('', (req, res) => {
-//     res.render('index', { title: 'Home Page'})
-// })
-
-// app.get('/about', (req, res) => {
-//     res.render('about', { title: 'About Page', layout: './layouts/sidebar' })
-// })
-
-// // Listen on Port 5000
-// app.listen(port, () => console.info(`App listening on port ${port}`))
