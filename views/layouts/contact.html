@@ -28,7 +28,7 @@
      	<div class="nav-bar">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-					<a href="#" class="navbar-brand">
+					<a href="index.html" class="navbar-brand">
 						<img src="/public/img/rmd.png" alt="logo" />
 					</a>
 					<button
@@ -45,16 +45,18 @@
 						id="navbarCollapse"
 					>
 						<div class="navbar-nav mr-auto">
-							<img src="/public/img/rmd2.png" alt="logo" class="rmdlogo" />
-							<a href="/" class="nav-item nav-link">Home</a>
+			<a href="/" class="navbar ">
+															<img src="/public/img/rmd2.png" alt="logo" class="rmdlogo" />
+
+					</a>							<a href="/" class="nav-item nav-link">Home</a>
 							<a href="/public/about.html" class="nav-item nav-link">About</a>
-							<a href="/public/package.html" class="nav-item nav-link">Package</a>
+							<a href="/public/package.html" class="nav-item nav-link">Packages</a>
 							<a href="/public/faqs.html" class="nav-item nav-link">Faqs</a>
-							<a href="/contact" class="nav-item nav-link">Conact</a>
+							<a href="/public/privacy.html" class="nav-item nav-link">Privacy Policy</a>
 						
 						</div>
 						<div class="navbar-nav mr">
-							<a class="btn btn-custom nav-item nav-link" href="schedule.html">Schedule Now</a>
+							<a class="btn btn-custom nav-item nav-link"  id="nowmg" href="/contact">Contact</a>
 						</div>
 					</div>
 				</nav>
@@ -85,7 +87,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <p>Get In Touch</p>
-                    <h2>Contact for any query</h2>
+                    <h2>Contact for any Inquiries</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-5 colm50">
@@ -98,7 +100,7 @@
                                 </div>
                                 <div class="contact-info-text">
                                     <h3>Call Us</h3>
-									<p><a href="tel:+574-221-009">574-221-009</a></p>
+									<p><a href="tel:+574-221-0095">574-221-0095</a></p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -136,21 +138,21 @@
                         <div class="contact-form">
                             <div id="success"></div>
                              <h3>Email Us</h3> 
-                            <form  method="POST" action="send" name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <form  method="POST" action="send"  id="contactForm" novalidate="novalidate">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name"  required />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="tel" class="form-control" id="number" placeholder="Your Phone Number" required="required" data-validation-required-message="Please enter a subject" />
+                                    <input type="tel" class="form-control" name="number" id="number" placeholder="Your Phone Number" required="required" data-validation-required-message="Please enter a subject" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" id="message" placeholder="How can we help?" required="required" data-validation-required-message="Please send a message "></textarea>
+                                    <textarea class="form-control" id="message" name="message" placeholder="How can we help?" required="required" data-validation-required-message="Please send a message "></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div>
@@ -186,13 +188,13 @@
 						<li><a href="about.html" id="link-text">About Us</a></li>
 						<li><a href="package.html" id="link-text">Packages</a></li>
 						<li><a href="faqs.html" id="link-text">FAQs</a></li>
-						<li><a href="contact.html" id="link-text">Conatct</a></li>
+						<li><a href="contact.html" id="link-text">Contact</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 ftcol">
 					<h5>Contact Lnks</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="tel:+574-221-009" id="link-text">+574-221-009</a></li>
+						<li><a href="tel:+574-221-0095" id="link-text">574-221-0095</a></li>
 						<li><a href="mailto:info@royalsmobiledetailing.com" id="link-text">info@royalsmobiledetailing.com</a></li>
 					
 					</ul>

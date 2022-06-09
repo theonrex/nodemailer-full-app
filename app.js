@@ -52,16 +52,19 @@ app.post('/send', (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-      service: 'gmail',
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
+      service: 'hotmail', 
+       pool: true,
+
+    host: "smtp-mail.outlook.com",
+   secureConnection: false,
+       port: 587,
+ // true for 465, false for other ports
     auth: {
         user: process.env.DB_USER, // generated ethereal user
         pass:  process.env.DB_PASS, // generated ethereal password
     },
     tls:{
-      rejectUnauthorized:false
+              ciphers:'SSLv3',
     }
   });
 
@@ -89,7 +92,6 @@ app.post('/send', (req, res) => {
 
 // app.listen(3000, () => console.log('Server started...'));
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
 
 
 

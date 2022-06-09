@@ -284,11 +284,11 @@ button:active {
     z-index: 999;
 }
 .navbar img {
-    width: 55px;
+    width: 85px;
 }
 
 .nav-bar .navbar {
-    padding: 20px 0;
+    padding: 7px 0;
     background: #ffffff !important;
     transition: .3s;
 }
@@ -303,11 +303,15 @@ button:active {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active:hover {
     color: #000000;
-    padding: 15px;
+    padding: 47px 22px 3px 22px;
     font-weight: 600;
+    font-size: 1.5rem;
     letter-spacing: 1px;
 }
-
+#nowmg{
+    padding: 15px 22px 15px 22px;
+        font-weight: 600;
+}
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #b50000;
@@ -903,7 +907,7 @@ button.btn.btn-link i {
 }
 
 
-/********** Facts CSS **********/
+/********** image CSS **********/
 .facts {
     position: relative;
     width: 100%;
@@ -911,31 +915,77 @@ button.btn.btn-link i {
     margin: 45px 0;
     display: flex;
     align-items: center;
-    background: #0b0d11;
+    background: #000000;
+    border-radius: 20px 20px 0 0;
 }
 
 .facts .facts-item {
     display: flex;
     flex-direction: row;
-    margin: 25px 0;
+    margin: 0 0;
 }
 
-.facts .facts-item i {
+.airmg{
+    margin-bottom: 62px;
+}
+.facts .facts-item img {
     margin-top: 15px;
     font-size: 45px;
     color: #E81C2E;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+    color: white !important;
+    opacity: 1;
+    border-top:#ffffff;
+    border-top-color: white!important;
+        border-top-style: none !important;
+        border-top-width: initial !important;
+        border-right-color: initial !important;
+        border-right-style: none !important;
+        border-right-width: initial !important;
+        border-bottom-color: initial !important;
+        border-bottom-style: none !important;
+        border-bottom-width: initial !important;
+        border-left-color: initial !important;
+        border-left-style: none !important;
+        border-left-width: initial !important;
+        border-image-source: initial !important;
+        border-image-slice: initial !important;
+        border-image-width: initial !important;
+        border-image-outset: initial !important;
+        border-image-repeat: none !important;
+}
+.our{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.our:hover{
+    color: #E81C2E;
+}
+
+.facts .myborder:hover{
+    border: 2px solid rgb(7, 3, 3);
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 22px;
 }
 
 .facts .facts-text {
     padding-left: 20px;
 }
-
-.facts .facts-text h3 {
-    position: relative;
-    display: inline-block;
+.bbmg{
+    margin-top: 33px;
+}
+.facts h3 {
+  margin-top: 22px;
     color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
 }
 
 .facts .facts-text h3::after {
@@ -1105,7 +1155,48 @@ text-align: left !important;
     text-decoration: none;
 }
 
-/******** Location CSS *********/
+/******** Privacy CSS *********/
+.privacy h1 {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #E81C2E;
+}
+
+.policy div header{
+    font-weight: 600;
+    font: 1.5em sans-serif;
+text-transform: capitalize;}
+.policy div li {
+list-style: disc;
+
+}
+
+.policy div p a {
+font-size: 22px;
+}
+.policy div header:hover {
+    font-weight: 600;
+    font: 1.5em sans-serif;
+    color: #ff0000;
+}
+
+.privacy h1::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 3px;
+    left: 0%;
+    bottom: 0;
+    background: #E81C2E;
+}
+
+
 .location {
     position: relative;
     width: 100%;
@@ -1325,11 +1416,17 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #000000;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 
+.rights h3{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
 #footer {
     
     background: #000000 !important;
