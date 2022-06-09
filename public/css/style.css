@@ -1312,7 +1312,7 @@ font-size: 22px;
 }
 .contact .contact-info h2 {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -1322,6 +1322,7 @@ font-size: 22px;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 30px;
+
 }
 
 .contact .contact-info-icon {
@@ -1400,6 +1401,15 @@ font-size: 22px;
 
 
 
+.centercol{
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/* .contact-form img{
+    width: 100%;
+    border-radius: 12px;
+} */
 /********* Footer CSS **********/
 /* Footer */
 
