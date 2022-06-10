@@ -912,7 +912,7 @@ button.btn.btn-link i {
     position: relative;
     width: 100%;
     min-height: 400px;
-    margin: 45px 0;
+    margin: 25px 0;
     display: flex;
     align-items: center;
     background: #000000;
@@ -1323,6 +1323,28 @@ font-size: 22px;
     justify-content: flex-start;
     margin-bottom: 30px;
 
+}
+.makes p{
+    text-align: center !important;
+    margin: auto !important;
+ font-size: 38px;
+ font-weight: 700;
+ color: #E81C2E;
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 5px auto;
+        
+}
+
+.makes p::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    left: 25%;
+    bottom: 0;
+    background: #E81C2E;
 }
 
 .contact .contact-info-icon {

@@ -16,7 +16,7 @@ app.engine('html', engine({ extname: '.html', defaultLayout: "home"}));
  app.set('view engine', 'html');
 
  // Static folder
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/en', express.static(path.join(__dirname, 'en')));
 
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
